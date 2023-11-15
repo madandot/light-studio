@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { BiArrowBack } from "react-icons/bi";
 import HeroText from "@/components/HeroText";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
    return (
@@ -36,7 +37,12 @@ const Hero = () => {
                )}
             >
                <div>
-                  <img src='/bannerone.jpg' height={595} className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] ' />
+                  <Image
+                     src='/bannerone.jpg'
+                     width={500}
+                     height={500}
+                     className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] '
+                  />
                   <HeroText title='OutWare Picks' />
                </div>
                <div>

@@ -3,6 +3,7 @@ import React from "react";
 import { AiFillInstagram, AiFillFacebook, AiFillGithub, AiFillRedditCircle } from "react-icons/ai";
 import Container from "./Container";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
    return (
@@ -52,7 +53,7 @@ const Footer = () => {
             </div>
             <div className=''>
                <h1 className=' font-bold text-black capitalize py-4'>Pay us with your trusted services</h1>
-               <img src='/payment.png' alt='' width={200} />
+               <Image src={"/payment.png"} alt='' height={100} width={200} />
                <div className='flex items-center gap-x-2 text-3xl cursor-pointer py-8 text-white'>
                   <Link href={""} onClick={() => window.open("https://www.instagram.com/", "_target")}>
                      <AiFillInstagram className='hover:text-black' />

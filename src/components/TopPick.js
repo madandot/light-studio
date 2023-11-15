@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
-
+import Image from "next/image";
 const TopPick = () => {
    return (
       <div>
          <div className='flex flex-col md:flex-row items-center mb-10 md:mx-10 '>
             <div>
-               <img src='/one.webp' alt='' />
+               <Image src={"/one.webp"} alt='' height={500} width={500} />
             </div>
             <div className='md:px-8 pt-4'>
                <h1 className='text-2xl font-bold pb-4'>Top Picked Product</h1>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Search from "@/components/Search";
 import SearchResults from "@/components/SearchResults";
+import Image from "next/image";
 const SearchBar = () => {
    const [results, setResults] = useState([]);
    return (
@@ -15,7 +16,7 @@ const SearchBar = () => {
                hand. We’re committed to using sustainable materials and processes in our products and operations, so you can feel good about
                your purchase and its impact on the world.
             </p>
-            <img src='/recycled-shoe.webp' alt='' className=' rounded-full' width={300} height={300} />
+            <Image src={"/recycled-shoe.webp"} alt='' className=' rounded-full' width={300} height={300} />
          </div>
       </div>
    );

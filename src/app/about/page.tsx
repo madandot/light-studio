@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-
+import Image from "next/image";
 const About = () => {
    return (
       <div>
@@ -32,7 +32,7 @@ const About = () => {
                   </section>
                   <section className='flex md:flex-row flex-col '>
                      <div>
-                        <img src='/recycled-shoe-store.webp' alt='' />
+                        <Image src={"/recycled-shoe-store.webp"} width={500} height={500} className='md:mt-6' />
                      </div>
                      <div className='flex flex-col md:px-8 py-5'>
                         <p className=' font-bold pb-4'>ABOUT</p>
