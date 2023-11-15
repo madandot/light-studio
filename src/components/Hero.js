@@ -39,6 +39,7 @@ const Hero = () => {
                <div>
                   <Image
                      src='/bannerone.jpg'
+                     alt='image'
                      width={500}
                      height={500}
                      className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] '
@@ -46,23 +47,35 @@ const Hero = () => {
                   <HeroText title='OutWare Picks' />
                </div>
                <div>
-                  <img src='/slide-2.png' className='aspect-[16/10] md:aspect-auto object-cover' />
+                  <Image src={"/slide-2.png"} alt='image' width={500} height={500} className='aspect-[16/10] md:aspect-auto object-cover' />
                   <HeroText title='Seasonal Offers' />
                </div>
                <div>
-                  <img src='/bannertwo.jpg' height={595} className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] ' />
+                  <Image
+                     src={"/bannertwo.jpg"}
+                     alt='image'
+                     width={500}
+                     height={500}
+                     className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] '
+                  />
                   <HeroText title='Best for women' />
                </div>
                <div className=' relative'>
-                  <img src='/slide-3.png' className='aspect-[16/10] md:aspect-auto object-cover' />
+                  <Image src={"/slide-3.png"} alt='image' width={500} height={500} className='aspect-[16/10] md:aspect-auto object-cover' />
                   <HeroText title='Running Shoe' />
                </div>
                <div>
-                  <img src='/bannerthree.jpg' height={595} className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] ' />
+                  <Image
+                     src={"/bannerthree.jpg"}
+                     alt='image'
+                     width={500}
+                     height={500}
+                     className='aspect-[16/10] md:aspect-auto object-cover md:h-[515px] '
+                  />
                   <HeroText title='Best for men' />
                </div>
                <div>
-                  <img src='/slide-1.png' className='aspect-[16/10] md:aspect-auto object-cover' />
+                  <Image src={"/slide-1.png"} alt='image' width={500} height={500} className='aspect-[16/10] md:aspect-auto object-cover' />
                   <HeroText title='Nike' />
                </div>
             </Carousel>
