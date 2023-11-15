@@ -32,7 +32,7 @@ const About = () => {
                   </section>
                   <section className='flex md:flex-row flex-col '>
                      <div>
-                        <Image src={"/recycled-shoe-store.webp"} width={500} height={500} className='md:mt-6' />
+                        <Image src={"/recycled-shoe-store.webp"} alt='image' width={500} height={500} className='md:mt-6' />
                      </div>
                      <div className='flex flex-col md:px-8 py-5'>
                         <p className=' font-bold pb-4'>ABOUT</p>
