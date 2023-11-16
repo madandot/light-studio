@@ -61,14 +61,8 @@ const ProductsData = ({ item }: ItemProps) => {
                      <p className='font-bold text-green-600'>{calculatePercentage(item?.price, item?.oldPrice)}%off</p>
                   </div>
                </div>
-               <button
-                  className=' relative flex items-center justify-start overflow-hidden transition-all bg-white rounded
-  hover:bg-white group'
-               >
-                  <span
-                     className='w-0 h-0 rounded bg-[#767676] absolute top-0 left-0
-     ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1'
-                  ></span>
+               <button className=' relative flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group'>
+                  <span className='w-0 h-0 rounded bg-[#767676] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1'></span>
                   <Link
                      href={{ pathname: "/product", query: { _id: item?._id } }}
                      className='w-full py-4 text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10 font-bold'

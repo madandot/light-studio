@@ -40,7 +40,7 @@ const Header = () => {
    };
    return (
       <div className=' top-0 sticky z-50 bg-[#ffff] '>
-         <div className='flex justify-between items-center py-4'>
+         <div className='flex justify-between items-center py-4 md:px-8'>
             <div>
                <Logo />
             </div>
@@ -101,7 +101,7 @@ const Header = () => {
                   <Link
                      href={"/cart"}
                      className='flex items-center  font-normal hover:font-bold px-4 text-base text-[#767676]  decoration-200
-                          hover:text-[#262626]  border-r-[1px] border-[#767676] relative  '
+                          hover:text-[#262626]  relative  '
                   >
                      <BsCart />
                      <span className=' text-base  absolute -top-4 right-2  '>{productData ? productData?.length : 0}</span>
