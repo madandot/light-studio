@@ -10,13 +10,13 @@ import Image from "next/image";
 const Hero = () => {
    return (
       <div className=' '>
-         <div className='flex flex-col md:flex-row justify-around  py-20  w-full max-w-[1000px] mx-auto  '>
+         <div className='flex flex-col md:flex-row justify-around  py-20  w-full md:max-w-[1000px] mx-auto  '>
             <Image
                src={"/two.webp"}
                alt='image'
                width={400}
                height={400}
-               className='aspect-[16/10] md:aspect-auto object-cover  rounded-full '
+               className='aspect-[16/10] md:aspect-auto object-cover  md:rounded-full px-10 md:px-0 '
             />
             <div className='flex flex-col gap-4 px-12 mt-6'>
                <h1 className='text-2xl font-bold'>Air</h1>
