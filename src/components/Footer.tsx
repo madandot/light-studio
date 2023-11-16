@@ -12,7 +12,7 @@ const Footer = () => {
             <div>
                <div>
                   <h1 className=' font-bold text-xl py-4'>LIGHT STUDIO</h1>
-                  <p className=' font-light pb-4  text-white'>
+                  <p className=' font-light pb-4 text-white'>
                      LIGHT STUDIO is a globally renowned American multinational corporation that is engaged in the design, marketing, and
                      sales of athletic footwear, apparel, equipment, and accessories manufacturing.
                   </p>
@@ -51,7 +51,7 @@ const Footer = () => {
                   <p className=' hover:text-black cursor-pointer font-semibold text-white py-1'>Contact</p>
                </Link>
             </div>
-            <div className=''>
+            <div>
                <h1 className=' font-bold text-black capitalize py-4'>Pay us with your trusted services</h1>
                <Image src={"/payment.png"} alt='' height={100} width={200} />
                <div className='flex items-center gap-x-2 text-3xl cursor-pointer py-8 text-white'>
