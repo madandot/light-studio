@@ -18,7 +18,7 @@ const Footer = () => {
                   </p>
                </div>
             </div>
-            <div className=''>
+            <div>
                <h1 className='py-4 text-xl font-bold'>Latest posts</h1>
                <p className='hover:scale-100 hover:text-black cursor-pointer text-[12.5px] transition duration-200 py-1 text-white '>
                   Where Music Is Headed Next

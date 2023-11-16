@@ -1,22 +1,16 @@
 import React from "react";
 import { ItemProps } from "../../type";
 import toast, { Toaster } from "react-hot-toast";
-// import { useDispatch } from "react-redux";
 import { AiFillStar } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import { calculatePercentage } from "@/helper";
-
-// import { addToCart } from "@/redux/shoppingSlice";
-
 const All = ({ item }: ItemProps) => {
-   //  const dispatch = useDispatch();
    const startArray = Array.from({ length: item?.rating }, (_, index) => (
       <span key={index} className='text-yellow-400'>
          <AiFillStar />
       </span>
    ));
-
    return (
       <div>
          <div className='w-full rounded-lg overflow-hidden  '>
@@ -52,21 +46,11 @@ const All = ({ item }: ItemProps) => {
                      </div>
                   </div>
                   <div className='flex justify-between items-center'>
-                     {/* <button
-                        onClick={() => {
-                           dispatch(addToCart(item));
-                           toast.success(`${item?.title.substring(0, 15)} Added Successfully!`);
-                        }}
-                        className='bg-transparent/90 text-white px-1 py-1 rounded'
-                     >
-                        Add to Cart
-                     </button> */}
                      <div>
                         <Link href={{ pathname: "/product", query: { _id: item?._id } }}>
                            <button className='bg-black text-white text-xl font-bold px-4 py-2 capitalize rounded-md'>view</button>
                         </Link>
                      </div>
-
                      <p className='flex items-center'>{startArray}</p>
                   </div>
                </div>

@@ -1,7 +1,6 @@
 import Container from "@/components/Container";
 import Link from "next/link";
 import React from "react";
-
 const SuccessPage = () => {
    return (
       <Container className=' flex justify-center items-center py-20'>

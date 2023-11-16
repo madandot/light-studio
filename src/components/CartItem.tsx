@@ -11,16 +11,7 @@ const CartItem = () => {
    const dispatch = useDispatch();
    return (
       <div className='flex flex-col gap-y-2'>
-         {/* <div
-            className='hidden  md:flex justify-between items-center font-semibold 
-          bg-white shadow-xl px-4 py-2 rounded'
-         >
-            <p>Product</p>
-            <p>Quantity</p>
-            <p>SubTotal</p>
-         </div> */}
          <div className='flex flex-col gap-y-2'>
-            {/* flex-col md:flex-row items-center justify-between */}
             {productData?.map((item: Products) => (
                <div key={item._id} className='bg-white p-4 flex flex-col md:flex-row items-center relative '>
                   <Image src={item?.image} width={200} height={200} alt='prodcut image' loading='lazy' className='w-30 h-25 object-cover' />

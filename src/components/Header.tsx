@@ -33,15 +33,6 @@ const Header = () => {
          dispatch(deleteUser);
       }
    }, [session, dispatch]);
-   // const [totalAmt, SetTotalAmt] = useState(0);
-   // useEffect(() => {
-   //    let amt = 0;
-   //    productData.map((item: Products) => {
-   //       amt += item.price * item.quantity;
-   //       return;
-   //    });
-   //    SetTotalAmt(amt);
-   // }, [productData]);
 
    const [mobileMenu, setMobileMenu] = useState(false);
    const toggleMobileMenu = () => {
@@ -162,10 +153,6 @@ const Header = () => {
                      </div>
                   )}
                </div>
-               {/** Logout session Start */}
-               {/* {session && (
-               <Image src={session?.user?.image as string} alt='user image' width={50} height={50} className=' rounded-full object-cover' />
-            )} */}
                {session && (
                   <div
                      className=' font-normal hover:font-bold px-4 text-base text-[#767676]  decoration-200

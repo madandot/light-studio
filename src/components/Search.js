@@ -18,10 +18,10 @@ const Search = ({ setResults }) => {
       setSearchTerm(value);
       fetchData(value);
    };
-   const handleSearch = (e) => {
-      e.preventDefault();
-      console.log("Search Term:", searchTerm);
-   };
+   // const handleSearch = (e) => {
+   //    e.preventDefault();
+   //    console.log("Search Term:", searchTerm);
+   // };
    return (
       <div>
          <div className='flex flex-col justify-center items-center my-20'>
@@ -51,7 +51,3 @@ const Search = ({ setResults }) => {
 };
 
 export default Search;
-<div
-   className=' absolute w-full md:h-[9.5rem] bg-gradient-to-b from-gray-100
-            z-10 to-transparent bottom-10 left-0'
-/>;

@@ -4,17 +4,14 @@ import { Products } from "../../../type";
 import ProductsData from "@/components/ProductsData";
 import SingleProduct from "@/components/SignleProduct";
 import TopPick from "@/components/TopPick";
-
 type Props = {
    searchParams: { [key: string]: string | string[] | undefined };
 };
-
 const ProductPage = async ({ searchParams }: Props) => {
    const _idString = searchParams?._id;
    const _id = Number(_idString);
    const product = getSingleProduct(_id);
    const data = await getTrendingProducts();
-
    return (
       <div>
          <Container className='mx-8 my-8 '>
