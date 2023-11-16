@@ -8,6 +8,7 @@ const nextConfig = {
          "lh3.googleusercontent.com",
          "fakestoreapi.com",
          "i.ibb.co",
+         "recycled-shoe-product-image",
       ],
    },
 };
