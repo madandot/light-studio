@@ -8,20 +8,27 @@ const Search = ({ setResults }) => {
       fetch("https://fakestoreapiserver.reactbd.com/smart")
          .then((Response) => Response.json())
          .then((json) => {
+            const lowerCaseValue = value.toLowerCase(); // Convert search value to lowercase
+            const upperCaseValue = value.toUpperCase(); // Convert search value to uppercase
             const results = json.filter((user) => {
-               return value && user && user.title && user.title.toLowerCase().includes(value);
+               const lowerCaseTitle = user.title.toLowerCase(); // Convert title to lowercase
+               const upperCaseTitle = user.title.toUpperCase(); // Convert title to uppercase
+               return value && user && user.title && (lowerCaseTitle.includes(lowerCaseValue) || upperCaseTitle.includes(upperCaseValue));
             });
-            setResults(results);
+            if (results.length === 0) {
+               setResults([]); // No results found, set an empty array
+               setNotFoundMessage("Product is not available."); // Set the not found message
+            } else {
+               setResults(results); // Set the filtered results
+               setNotFoundMessage(""); // Clear the not found message if results are found
+            }
          });
    };
    const handleChange = (value) => {
       setSearchTerm(value);
       fetchData(value);
    };
-   // const handleSearch = (e) => {
-   //    e.preventDefault();
-   //    console.log("Search Term:", searchTerm);
-   // };
+
    return (
       <div>
          <div className='flex flex-col justify-center items-center my-20'>

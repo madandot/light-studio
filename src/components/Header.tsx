@@ -133,13 +133,15 @@ const Header = () => {
                                  Home
                               </p>
                            </Link>
-                           <p
-                              className=' font-normal hover:font-bold px-4 text-base text-[#767676]  decoration-200
-                          hover:text-[#262626]  border-r-[1px] border-[#767676]  '
-                           >
-                              Contact
-                              {/* <CiMail /> */}
-                           </p>
+                           <Link href={"/contact"}>
+                              <p
+                                 className=' font-normal hover:font-bold px-4 text-base text-[#767676]  decoration-200
+                              hover:text-[#262626]  border-r-[1px] border-[#767676]  '
+                              >
+                                 Contact
+                                 {/* <CiMail /> */}
+                              </p>
+                           </Link>
                            <Link href='/about'>
                               <p
                                  className=' font-normal hover:font-bold px-4 text-base text-[#767676]  decoration-200

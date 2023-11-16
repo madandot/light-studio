@@ -31,7 +31,7 @@ const ProductsData = ({ item }: ItemProps) => {
    return (
       <div className='w-full rounded-lg overflow-hidden group  '>
          <div className=' bg-white shadow-xl  md:px-10 py-10  group-hover:scale-110 duration-200 cursor-pointer   '>
-            <Link href={"/"}>
+            <Link href={""}>
                <div className='w-full h-[15rem]  relative'>
                   <Image
                      src={item?.image}
