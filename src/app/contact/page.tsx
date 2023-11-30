@@ -11,8 +11,17 @@ const ContactPage = () => {
       subject: Yup.string().required("Subject is required"),
       message: Yup.string().required("Message is required"),
    });
+   interface FormValues {
+      fullname: string;
+      email: string;
+      subject: string;
+      message: string;
+      // Include other fields as defined in your FormValues interface
+      field1: string;
+      field2: number;
+   }
 
-   const handleSubmit = (values, formikBag) => {
+   const handleSubmit = (values: FormValues, formikBag: any) => {
       const { setSubmitting } = formikBag;
       // Perform form submission logic here
       console.log("Form values:", values);
@@ -43,6 +52,8 @@ const ContactPage = () => {
                   email: "",
                   subject: "",
                   message: "",
+                  field1: "", // Include other fields with their initial values
+                  field2: 0,
                }}
                validationSchema={validationSchema}
                onSubmit={handleSubmit}
