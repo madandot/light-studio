@@ -5,7 +5,7 @@ const Logo = () => {
    return (
       <div className='px-4'>
          <Link href='/'>
-            <Image src={"/NOVA.png"} alt='' width={100} height={100} />
+            <Image src={"/NOVA.png"} alt='' width={100} height={100} className='w-auto' />
          </Link>
       </div>
    );

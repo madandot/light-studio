@@ -62,7 +62,7 @@ const Hero = () => {
                      alt='image'
                      width={500}
                      height={500}
-                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-[400px]'
+                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-auto'
                   />
                   <HeroText title='Seasonal Offers' />
                </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                      alt='image'
                      width={500}
                      height={500}
-                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-[400px] '
+                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-auto '
                   />
                   <HeroText title='Running Shoe' />
                </div>
@@ -82,7 +82,7 @@ const Hero = () => {
                      alt='image'
                      width={500}
                      height={500}
-                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-[400px] '
+                     className='aspect-[16/10] md:aspect-auto object-cover rounded-md md:h-[500px] h-auto '
                   />
                   <HeroText title='Nike' />
                </div>
