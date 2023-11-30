@@ -12,11 +12,26 @@ const ContactPage = () => {
       message: Yup.string().required("Message is required"),
    });
 
-   const handleSubmit = (values, { setSubmitting }) => {
+   const handleSubmit = (values, formikBag) => {
+      const { setSubmitting } = formikBag;
       // Perform form submission logic here
       console.log("Form values:", values);
       // You can make API calls or other actions with the form data
-      setSubmitting(false);
+
+      // Example API call using setTimeout to simulate asynchronous behavior
+      setSubmitting(true); // Set submitting to true before the API call
+
+      setTimeout(() => {
+         // Simulating API call completion after 2 seconds
+         console.log("Form submitted successfully!");
+         // Additional logic after form submission
+
+         // Reset the form after successful submission if needed
+         formikBag.resetForm();
+
+         // Set submitting to false after the API call is completed
+         setSubmitting(false);
+      }, 2000); // Simulating a 2-second delay for the API call
    };
 
    return (
